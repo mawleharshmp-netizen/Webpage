@@ -1,0 +1,791 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+#navbar{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(90, 60, 150, 0.8);
+    color: rgb(252, 250, 250);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#navbar h1:hover{
+
+    /* color: #6686ee; */
+    transform: scale(1.2);
+}
+
+
+.links{
+
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    color: white;
+}
+.links a:hover{
+    color: rgb(219, 235, 7);
+    transform: scale(2);
+
+}
+
+.links li a{
+
+text-decoration: none;
+color: white;
+font-size: 16px;
+}
+
+
+/* home section  */
+
+.home{
+
+    height: 100vh;
+    background: linear-gradient(#20113fcc, rgba(90, 60, 150, 0.8)), url("bg.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.content{
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.content img{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    border: 5px solid white;
+}
+
+.text h1{
+
+    font-size: 50px;
+}
+
+.text p{
+
+    margin-top: 10px;
+}
+
+
+/* about section  */
+
+.about{
+
+    display: flex;
+    padding: 80px 50px;
+    background: white;
+    gap: 50px;
+}
+
+.about-me{
+
+    flex: 1;
+}
+
+.about-me h2{
+
+    color: #5a399e;
+    font-size: 32px;
+}
+
+.about-me h3{
+
+    margin: 15px;
+}
+
+.about-me p{
+
+    color: #555;
+    line-height: bold;
+}
+
+.connect{
+
+    margin-top: 20px;
+    font-weight: bold
+}
+
+/* icons  */
+.icons a{
+    color: white;
+    margin: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.icons a:hover{
+    color: rgb(214, 235, 25);
+    transform: scale(1.2);
+}
+
+
+
+/* about right side  */
+
+.about-right{
+
+    flex: 1;
+}
+
+.skill{
+
+    margin-bottom: 20px;
+}
+
+.skill p{
+
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.bar{
+
+    width: 100%;
+    height: 8px;
+    background: rgb(226, 215, 215);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.progress{
+
+    height: 100%;
+    background: #6b31e0;
+    border-radius: 10px;
+}
+
+.excel {width: 90%;}
+.sql {width: 80%;}
+.pyhton {width: 95%;}
+.powerbi {width: 98%;}
+.ml {width: 80%;}
+
+
+/* service section  */
+
+.services{
+
+    padding: 80px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.services h2{
+    color: #5a3c96;
+    font-size: 34px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle{
+
+    color: #666;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* grid  */
+
+.service-box{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card{
+    /* border: 2px solid black; */
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    border: 1px solid black;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #5a3c96;
+}
+.card i{
+    display: block;
+    font-size: 40px;
+    color: #888;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.card i:hover{
+    color: #5a3c96;
+    transform: scale3d(1.2);
+}
+
+.card h3{
+
+    color: #5a3c96;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.card h3:hover{
+    color: #5a3c96;
+}
+
+.card p{
+
+    color: #777;
+    font-size: 15px;
+}
+
+.card:hover{
+
+    transform: rotate3d(1);
+    box-shadow: #6b31e0;
+}
+
+.card i:hover{
+
+    color: #5a3c96;
+    transform: scale(1.1);
+}
+
+/* portfolio section */
+
+.portfolio{
+
+    padding: 60px 80px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.portfolio h2{
+    color: #5a3ebc;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.portfolio .p-subtitle{
+
+    color: #555;
+    margin-bottom: 40px;
+}
+
+
+.p-grid{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.p-grid img{
+
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+.p-grid img:hover{
+
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/* clients section  */
+
+.clients{
+
+    padding: 50px 80px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.clients h2{
+
+    color: #5a3ebc;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.client-logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.client-logo img{
+
+    width: 100px;
+}
+
+.client-logo img:hover{
+
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/* Experience section  */
+
+.experience{
+
+    padding: 60px 80px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.experience h2{
+
+    color: #5a3ebc;
+    margin-bottom: 10px;
+}
+
+.e-subtitle{
+
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.timeline{
+
+    max-width: 600px;
+    margin: auto;
+    /* border-left: 2px solid #5a3ebc; */
+    padding-left: 20px;
+}
+
+.item{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.image{
+
+    width: 40%;
+    text-align: right;
+    padding-right: 30px;
+}
+.item img{
+
+    width: 120px;
+}
+
+.item img:hover{
+
+    color: darkblue;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.item::before{
+
+    content: '';
+    width: 12px;
+    height: 12px;
+    /* background: #5a3ebc; */
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 5px;
+}
+.item h4{
+
+    font-size: 12px;
+    color: #777;
+}
+.item h3{
+
+    color: #5a3ebc;
+    font-size: 16px;
+    margin: 5px;
+}
+.item p{
+
+    font-size: 14px;
+    color: #666;
+}
+
+/* stats section */
+
+.stats{
+
+    display: flex;
+    justify-content: space-around;
+    background: #5a3ebc;
+    color: white;
+    padding: 50px 20px;
+}
+
+.stat-box {
+
+    text-align: center;
+}
+
+.stat-box i{
+
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.stat-box i:hover{
+    color: rgb(205, 240, 10);
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.stat-box h3{
+    font-size: 28px;
+}
+
+.stat-box p{
+    font-size: 14px;
+}
+
+
+/* hobby section  */
+
+.hobby{
+
+    padding: 70px 80px;
+    background: white;
+    text-align: center;
+}
+
+.hobby h2{
+
+    font-size: 45px;
+    color: #4e3bbd;
+    margin-bottom: 10px;
+}
+
+.h-subtitle{
+
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 50px;
+}
+
+.h-container{
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* card  */
+
+.h-card{
+
+    width: 380px;
+    text-align: left;
+}
+
+.h-image{
+
+    position: relative;
+}
+.h-image img{
+
+    width: 100%;
+    display: block;
+}
+
+.h-image button{
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+
+    border: 2px solid white;
+    background: transparent;
+
+    color: white;
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+.h-card h3{
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.h-card p{
+
+    color: gray;
+    line-height: 25px;
+}
+
+.h-card img:hover{
+
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+/* contact section  */
+
+.contact{
+
+    padding: 80px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.contact h2{
+
+    font-size: 50px;
+    color: #4e3bbd;
+    margin-bottom: 15px;
+}
+
+.contact h3{
+
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.c-text{
+
+    width: 70%;
+    margin: auto;
+    color: gray;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+/* form  */
+
+form{
+
+    width: 80%;
+    margin: auto;
+}
+
+.input-box{
+
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.input-box input{
+
+    width: 50%;
+    padding: 18px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* textarea  */
+
+textarea{
+
+    width: 100%;
+    height: 250px;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    resize: none;
+
+    font-size: 16px;
+}
+
+/* button  */
+
+form button {
+
+    margin-top: 30px;
+    padding: 15px 35px;
+
+    background: #4e3bbd;
+    color: white;
+
+    border: none;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* information  */
+
+.info{
+
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    width: 90%;
+}
+
+/* boxex  */
+
+.info-box{
+
+    flex: 1;
+    border: 1px solid #e5e5e5;
+    padding: 40px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* icons  */
+
+.ingo-box i{
+
+    font-size: 22px;
+    color: gray;
+
+    margin-bottom: 15px;
+}
+
+.info-box h3{
+
+    /* color: gray; */
+    font-size: 15px;
+    font-size: 20px;
+}
+
+.info-box p{
+
+    /* color: #4e3bbd; */
+    font-size: 22px;
+}
+
+.info-box:hover{
+
+    background: #4e3bbd;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(90, 60, 150, 0.8);
+}
+
+.info-box h3:hover
+.info-box p:hover
+.info-box i:hover{
+
+    color: white;
+}
+
+
+/* map section  */
+
+.map iframe{
+
+    width: 100%;
+    display: block;
+}
+
+
+/* newslatter  */
+
+.newsletter{
+
+    background: linear-gradient(0,0,0,0.6), rgba(0,0,0,0.6) url("bg1.jpg") center/cover no-repeat;
+
+    /* background-size: cover; */
+    /* background-position: center; */
+
+    text-align: center;
+    padding: 100px 20px;
+    /* color: white; */
+
+}
+
+.newsletter h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.newsletter h2 span{
+
+    font-weight: bold;
+}
+
+.newsletter h3{
+
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.n-box{
+    border: px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.n-box input{
+
+    width: 400px;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.n-box button{
+
+    padding: 15px 30px;
+    border: none;
+    background: #f4d000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.n-box button:hover{
+    background: white;
+}
+
+/* footer  */
+
+footer{
+
+    background: #5a3c96;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.f-icons a{
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.f-icons a:hover{
+
+    transform: scale(1.3);
+    color: #f4d000;
+}
